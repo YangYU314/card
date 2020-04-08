@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>card</title>
+    <style>
+        body{
+            width: 345px;
+            height: 442.06px;
+            border: 1px solid rgb(236, 235, 235);
+            border-radius: 4px;
+            box-shadow: 0px 1px rgb(87, 86, 86);
+            margin: 20px auto;
+        }       
+        .header{
+            /* border: 1px solid black; */
+            height: 72px;
+            padding: 16px;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            width: 100%; 
+            box-sizing: border-box;
+        }
+        .icon{
+            background-color: red;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            position: relative;
+            font-size: 1.25rem;
+            align-items: center;
+            flex-shrink: 0;
+            justify-content: center;
+        }
+        
+        .block1{
+            flex: 0 0 auto;
+            margin-right: 16px;
+            float: left;
+        }
+
+        .block2{
+            float: left;
+            
+        }
+        .title{
+            color: rgba(0, 0, 0, 0.87);
+            font: 14px;
+            display: block;
+            -webkit-font-smoothing: antialiased;
+        }
+        .date{
+            color: rgba(0, 0, 0, 0.54);
+            font: 14px;
+            display: block;
+        }
+
+        .container1{
+            float: right;
+            
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(240, 239, 239);
+            border: 1px solid rgb(240, 239, 239);
+            border-radius: 50%;
+
+        }
+
+        button:active{
+
+
+        }
+
+        .dot{
+            align-items: center;
+        }
+
+        .container2{
+            float: left;
+            margin: 2px;
+        }
+        .container3{
+            float: right;
+            margin-right: 6px;
+            -webkit-transition: -webkit-transform 2s;
+            transition: transform 2s;
+        }
+
+        .container3:active{
+            -webkit-transform: rotate(180deg) ;
+            transform: rotate(180deg)
+        }
+
+        button{
+            background-color: white;
+            border: 0px solid white;
+            width: 48px;
+            height: 48px;
+            padding: 12px;
+            position: relative;
+            box-sizing: border-box;
+            vertical-align: middle;
+            outline:none;
+            align-items: center;
+        }
+
+        .picture{
+            width: 345px;
+            height: 194.06px;
+            /* border: 1px solid black; */
+            position: relative;
+            overflow: hidden;
+            float: left;
+            /* width: 100%; */
+            object-fit:cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .content{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 112px;
+            padding: 16px;
+            box-sizing: border-box;
+
+        }
+        .text {
+            color: rgba(0, 0, 0, 0.54);
+            display: block;
+            /* margin: 14px 0px; */
+            font:14px;
+            /* margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px; */
+            
+        }
+        .t{
+            font-size: 0.875rem;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            line-height: 1.43;
+            letter-spacing: 0.01071em;
+        }
+        .footer{
+            /* border: 1px solid black; */
+            width: 345px;
+            height: 64px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="block1">
+            <div class="icon">R</div>
+        </div>
+        <div class="block2 t">
+            <div class="title">Shrimp and Chorizo Paella</div>
+            <div class="date">September 14, 2016</div>
+        </div>
+        <div>
+            <button class="container1">
+                <img  class="dot" src="more-vertical.png" alt="">
+            </button>
+            
+        </div>
+    </div>
+
+    <div class="picture">
+        <img src="pic.png" alt="">  
+    </div>
+
+    <div class="content">
+        <div class="text t">
+            This impressive paella is a perfect party dish and a fun
+             meal to cook together with your guests. Add 1 cup of
+              frozen peas along with the mussels, if you like.
+        </div>
+    </div>
+    <div class="footer">
+        <button class="container2">
+            <img src="heart.png" alt="">
+        </button>
+        <button class="container2">
+            <img src="share.png" alt="">
+        </button>
+        <button class="container3">
+            <img src="chevron-down.png" alt="">
+        </button>
+        
+    </div>
+    
+</body>
+</html>
